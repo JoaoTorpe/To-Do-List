@@ -1,0 +1,133 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+*{
+margin: 0;
+box-sizing: border-box;
+
+}
+:root{
+--color-fundo: black;
+--color-gray: gray;
+--color-white: white;
+--color-dark: rgb(14, 14, 14);
+--color-dark2: rgb(32, 32, 32);
+--color-dark3: rgb(22, 22, 22);
+--color-green: rgb(103, 195, 80);
+--color-green2: rgb(51, 149, 26);
+--color-red: rgb(184, 40, 35);
+--color-red2: rgb(146, 22, 17);
+}
+
+
+
+body{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+font-family: 'Open Sans', sans-serif;
+background-color: var(--color-fundo);
+color: var(--color-white);
+gap: 20px;
+}   
+
+.container{
+    height: 300px;
+    width: 400px;
+background-color: var(--color-fundo);
+display: flex;
+flex-direction: column;
+gap: 40px;
+
+
+}
+.inputtasck{
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+#input-text , #submit{
+font-size: 1rem;
+border: none;
+outline: none;
+padding: 1rem;
+
+}
+
+#input-text{
+border-radius:1rem;
+width: 20rem;
+
+}
+#submit{
+border-radius: 50% ;
+background-color: var(--color-dark3);
+color: var(--color-white);
+height: 50px;
+width: 50px;
+transition: 0.4s;
+}
+
+#submit:hover{
+cursor: pointer;
+background-color: var(--color-dark2);
+transition: 0.4s;
+}
+
+.list ol{
+
+padding: 0;
+display: flex;
+flex-direction: column;
+gap: 2rem;
+}
+
+.list li{
+background-color: var(--color-dark);
+color: var(--color-white);
+padding-left: 10px;
+list-style-type: none;
+font-size: 1.3rem;
+text-transform: capitalize;
+display: flex;
+align-items: center;
+justify-content: space-between;
+border-radius: 1rem;
+border-top-right-radius: 50px ; 
+border-bottom-right-radius: 50px ; 
+transition: 0.4s;
+
+}
+
+.list li:hover{
+transition: 0.4s;
+padding-left: 1rem;
+    background-color: var(--color-dark3);
+
+}
+
+
+
+
+
+
+#bnt:hover{
+cursor: pointer;
+background-color: var(--color-green);
+transition: 0.4s;
+}
+
+#bnt{
+    border: none;
+border-radius: 50%;
+height: 3.12rem;
+width: 3.12rem;
+background-color: var(--color-green2);
+color: var(--color-white);
+transition: 0.4s;
+}
